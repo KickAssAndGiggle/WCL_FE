@@ -1,0 +1,52 @@
+:root {
+    --honeyColor: #070707;
+    --honeyBorderColor: #252525;
+    --size: 30px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: relative;
+    background: radial-gradient(circle farthest-side at 0% 50%, var(--honeyColor) 23.5%,transparent 0)calc(var(--size)*0.7) var(--size), radial-gradient(circle farthest-side at 0% 50%,var(--honeyBorderColor) 24%,transparent 0)calc(var(--size)*19/30) var(--size), linear-gradient(var(--honeyColor) 14%,transparent 0, transparent 85%, var(--honeyColor) 0)0 0, linear-gradient(150deg, var(--honeyColor) 24%,var(--honeyBorderColor) 0,var(--honeyBorderColor) 26%,transparent 0,transparent 74%,var(--honeyBorderColor) 0,var(--honeyBorderColor) 76%, var(--honeyColor) 0)0 0, linear-gradient(30deg, var(--honeyColor) 24%,var(--honeyBorderColor) 0,var(--honeyBorderColor) 26%,transparent 0,transparent 74%,var(--honeyBorderColor) 0,var(--honeyBorderColor) 76%, var(--honeyColor) 0)0 0, linear-gradient(90deg,var(--honeyBorderColor) 2%, var(--honeyColor) 0, var(--honeyColor) 98%,var(--honeyBorderColor) 0%)0 0 var(--honeyColor);
+    background-size: calc(var(--size)*4/3) calc(var(--size)*2);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #FCFCFC;
+    font-size: 19px;
+}
+
+h2 {
+    color: #F1F1F1;
+    font-size: 30px;
+}
+
+h1 {
+    color: #F1F1F1;
+    font-size: 34px;
+}
+
+.flex {
+    display: flex;
+}
+
+.centralFullWidth {
+    width: 98vw;
+    margin-left: 1vw;
+}
+
+.outerLogoBorder {
+    background: radial-gradient(circle, #00000066, #000000CE);
+    border-radius: 90px;
+    padding: 10px;
+    width: 550px;
+    margin: auto;
+}
+
+.innerLogoBorder {
+    background: #00000034;
+    border-radius: 150px;
+    padding: 10px;
+    width: 500px;
+    margin: auto;
+}
