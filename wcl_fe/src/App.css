@@ -50,3 +50,51 @@ h1 {
     width: 500px;
     margin: auto;
 }
+
+.headerBar {
+    width: 100vw;
+    background: #332253FA;
+    overflow-y: hidden;
+}
+
+.infoHeader {
+    border-radius: 2px;
+    background: #6034B4FE;
+    color: white;
+    padding: 2px;
+    padding-left: 7px;
+    font-weight: 500;
+}
+
+.sideBarTopPanel {
+    background: #F9F9F9FE;
+    color: #030303FE;
+    max-width: 240px;
+    padding: 7px;
+    font-size: 17px;
+}
+
+.sidebarLabel {
+    width: 80px;
+    padding-right: 10px
+}
+
+.sidebarValue {
+    width: 150px;
+    overflow-x: hidden;
+}
+
+.sideBarMenuHolder {
+    background: #332253FA;
+    padding: 7px;
+}
+
+.sideBarMenuItem {
+    border-radius: 2px;
+    background: #F9F9F9FE;
+    font-size: 16px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    color: #030303FE;
+    padding-top: 2px;
+}

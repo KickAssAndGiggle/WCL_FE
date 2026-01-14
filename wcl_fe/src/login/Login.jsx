@@ -1,7 +1,7 @@
 import Logo from '../assets/logo.jpg'
 import { login } from '../helpers/apiAccess'
 
-export function Login() {
+export function Login(props) {
 
   const doLogin = async (data) => {
     const un = document.getElementById('txtUser').value
@@ -10,7 +10,8 @@ export function Login() {
   }
 
   const loginResult = (data) => {
-    console.log(data)
+    sessionStorage.setItem('token', data)
+    props.onLogin()
   }
 
 
@@ -30,13 +31,6 @@ export function Login() {
       </div>
     </div>
   )
-
-  useEffect(() => {
-    console.log("effect running")
-    debugger
-  }, [])
-
-
 
 }
 
