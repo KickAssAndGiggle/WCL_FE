@@ -10,7 +10,7 @@ function GamePanel(props) {
     } else if (props.ScreenSize == "MOBILE") {
       style.width = "600px"
     } else {
-      style.width = "900"
+      style.width = "900px"
     }
     setPanelProps(style)
   }, [props.ScreenSize]);
