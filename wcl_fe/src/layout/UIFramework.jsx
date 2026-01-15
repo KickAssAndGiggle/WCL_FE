@@ -8,6 +8,7 @@ function UIFramework() {
 
   // DESKTOP, TABLET or MOBILE
   const [screenSize, setScreenSize] = useState('DESKTOP')
+  const [panel, setPanel] = useState('OFFICE')
 
   const windowResized = (event) => {
     if (window.innerWidth < 800) {
@@ -33,7 +34,7 @@ function UIFramework() {
             <SideBar />
           </div>
           <div>
-            <GamePanel />
+            <GamePanel ScreenSize={screenSize} Panel={panel} />
           </div>
         </div>
       :

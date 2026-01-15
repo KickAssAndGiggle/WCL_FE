@@ -1,5 +1,5 @@
 import Logo from '../assets/logo.jpg'
-import { login } from '../helpers/apiAccess'
+import { login, getGymId } from '../helpers/apiAccess'
 
 export function Login(props) {
 
@@ -11,6 +11,10 @@ export function Login(props) {
 
   const loginResult = (data) => {
     sessionStorage.setItem('token', data)
+    getGymId(getGymResult)
+  }
+
+  const getGymResult = (data) => {
     props.onLogin()
   }
 

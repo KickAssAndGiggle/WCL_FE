@@ -24,3 +24,8 @@ export function login(un, pw, callback) {
   const body = { Email: un, Password: pw }
   postData("Account/Login", body, callback)
 }
+
+export function getGymId(callback) {
+  const body = { Token: sessionStorage.getItem('token') }
+  postData("Account/GetGymForToken", body, callback)
+}

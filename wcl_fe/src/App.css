@@ -98,3 +98,9 @@ h1 {
     color: #030303FE;
     padding-top: 2px;
 }
+
+.gamePanel {
+    border-radius: 2px;
+    border: 2px solid #000;
+    background: #F9F9F9FC;
+}
