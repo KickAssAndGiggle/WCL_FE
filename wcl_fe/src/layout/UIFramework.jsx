@@ -10,6 +10,10 @@ function UIFramework() {
   const [screenSize, setScreenSize] = useState('DESKTOP')
   const [panel, setPanel] = useState('OFFICE')
 
+  const screenChange = (newScreen) => {
+    setPanel(newScreen)
+  }
+
   const windowResized = (event) => {
     if (window.innerWidth < 800) {
       setScreenSize('MOBILE')
@@ -31,7 +35,7 @@ function UIFramework() {
       {screenSize == 'DESKTOP' ?
         <div className="flex">
           <div>
-            <SideBar />
+            <SideBar screenChange={screenChange} />
           </div>
           <div>
             <GamePanel ScreenSize={screenSize} Panel={panel} />

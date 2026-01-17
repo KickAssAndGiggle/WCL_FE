@@ -15,6 +15,10 @@ import Programmer from '../../assets/programmer.png'
 
 function SideBar(props) {
 
+  const screenChange = (newScreen) => {
+    props.screenChange(newScreen)
+  }
+
   return (
 
     <div>
@@ -47,7 +51,7 @@ function SideBar(props) {
         </div>
         <SideMenuItem img={Office} text="Office" />
         <SideMenuItem img={Weight} text="Gym" />
-        <SideMenuItem img={Boxer} text="Prospects" />
+        <SideMenuItem screenChange={screenChange} newScreen='PROSPECTS' img={Boxer} text="Prospects" />
         <SideMenuItem img={Team} text="Staff" />
         <SideMenuItem img={BoxingRing} text="Events" />
         <SideMenuItem img={Badge} text="Rankings" />

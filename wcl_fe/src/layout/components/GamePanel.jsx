@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Prospects from "../gamePanels/Prospects";
 function GamePanel(props) {
 
   const [panelProps, setPanelProps] = useState({})
@@ -17,12 +18,14 @@ function GamePanel(props) {
 
   return (
     <div className="gamePanel" style={panelProps}>
-      <p>jvfdjgs</p>
-      <p>fnefgiea</p>
-      <p>gjfogosjigj</p>
-      <p>gmjdfgsjiogjio[sg</p>
-      <p>mbjfgbjfigsji</p>
-      <p>gfigjfj</p>
+      {props.Panel == 'OFFICE' ? 
+        <></>
+        : props.Panel == 'GYM' ?
+          <></>
+          : props.Panel == 'PROSPECTS' ?
+            <Prospects />
+            : <></>
+      }
     </div>
   )
 }
