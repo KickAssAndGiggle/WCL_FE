@@ -26,6 +26,10 @@ h1 {
     font-size: 34px;
 }
 
+.darkText {
+    color: #030303FE;
+}
+
 .flex {
     display: flex;
 }
@@ -103,4 +107,45 @@ h1 {
     border-radius: 2px;
     border: 2px solid #000;
     background: #F9F9F9FC;
+}
+
+.panelHeader {
+    color: #030303FE;
+    font-size: 28px;
+    font-weight: 700;
+    width: 96%;
+    border-bottom: 1px solid #A9A9A9;
+}
+
+.panelBody {
+    padding: 9px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contentBox {
+    border-radius: 2px;
+    border: 1px solid #898989FF;
+    width: 500px;
+    margin-bottom: 9px;
+}
+
+.contentBoxHeader {
+    background: #332253FA;
+    color: #FFFFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 3px;
+}
+
+.contentBoxLabel {
+    width: 130px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.contentBoxData {
+    width: 130px;
+    font-size: 16px;
 }

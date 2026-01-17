@@ -29,3 +29,8 @@ export function getGymId(callback) {
   const body = { Token: sessionStorage.getItem('token') }
   postData("Account/GetGymForToken", body, callback)
 }
+
+export function getProspects(callback) {
+  const body = { Token: sessionStorage.getItem('token') }
+  postData("Gym/GetProspects", body, callback)
+}
