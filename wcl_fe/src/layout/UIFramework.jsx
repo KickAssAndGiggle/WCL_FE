@@ -44,7 +44,6 @@ function UIFramework() {
       :
         <SlideMenu />
       }
-      <h1>{screenSize}</h1>
     </div>
   )
 

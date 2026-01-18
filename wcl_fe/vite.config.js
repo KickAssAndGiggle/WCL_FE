@@ -6,5 +6,6 @@ export default defineConfig({
     plugins: [plugin()],
     server: {
         port: 61329,
-    }
+  },
+  base: '/WCL'
 })

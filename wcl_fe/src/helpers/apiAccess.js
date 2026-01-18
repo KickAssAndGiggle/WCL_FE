@@ -1,4 +1,4 @@
-var urlBase = 'https://localhost:7078/';
+var urlBase = 'https://jailhousesoftware.com/WCLBE/';
 
 async function postData(url, body, callback) {
 
@@ -23,6 +23,14 @@ async function postData(url, body, callback) {
 export function login(un, pw, callback) {
   const body = { Email: un, Password: pw }
   postData("Account/Login", body, callback)
+}
+
+export function signUp(email, password, displayName, gymName, country, city, callback) {
+  const body = {
+    Email: email, Password: password, DisplayName: displayName,
+    GymName: gymName, Country: country, City: city
+  }
+  postData("Account/Signup", body, callback)
 }
 
 export function getGymId(callback) {

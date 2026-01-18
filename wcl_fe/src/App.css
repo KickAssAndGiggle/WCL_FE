@@ -26,6 +26,33 @@ h1 {
     font-size: 34px;
 }
 
+a {
+    color: #F123FFFF;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.inputBox {
+    background: #E4E4E4FF;
+    border: 2px solid #671189FF;
+    font-size: 20px;
+}
+
+.button {
+    background-color: #671189FF;
+    border: none;
+    border-radius: 6px;
+    color: #E4E4E4FF;
+    padding: 7px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Adds shadow */
+}
+
 .darkText {
     color: #030303FE;
 }
@@ -40,19 +67,11 @@ h1 {
 }
 
 .outerLogoBorder {
-    background: radial-gradient(circle, #00000066, #000000CE);
+    background: radial-gradient(circle, #000000FF, #000000BB);
     border-radius: 90px;
     padding: 10px;
-    width: 550px;
     margin: auto;
-}
-
-.innerLogoBorder {
-    background: #00000034;
-    border-radius: 150px;
-    padding: 10px;
-    width: 500px;
-    margin: auto;
+    width: 96vw;
 }
 
 .headerBar {
@@ -63,7 +82,7 @@ h1 {
 
 .infoHeader {
     border-radius: 2px;
-    background: #6034B4FE;
+    background: #502474FE;
     color: white;
     padding: 2px;
     padding-left: 7px;
@@ -71,11 +90,12 @@ h1 {
 }
 
 .sideBarTopPanel {
-    background: #F9F9F9FE;
-    color: #030303FE;
+    background: #343434FF;
+    color: #F6F6F6FF;
     max-width: 240px;
     padding: 7px;
     font-size: 17px;
+    border-top: 2px solid #000;
 }
 
 .sidebarLabel {
@@ -95,40 +115,47 @@ h1 {
 
 .sideBarMenuItem {
     border-radius: 2px;
-    background: #F9F9F9FE;
+    background: #474747FF;
     font-size: 16px;
     margin-top: 1px;
     margin-bottom: 1px;
-    color: #030303FE;
+    color: #FFFFFFFF;
     padding-top: 2px;
 }
 
 .gamePanel {
     border-radius: 2px;
     border: 2px solid #000;
-    background: #F9F9F9FC;
+    background: #383838;
+    background: linear-gradient(90deg,rgba(56, 56, 56, 1) 0%, rgba(33, 33, 33, 1) 50%, rgba(56, 56, 56, 1) 100%);
+    color: #FEFEFEFF;
 }
 
 .panelHeader {
-    color: #030303FE;
+    color: #FEFEFEEF;
     font-size: 28px;
     font-weight: 700;
     width: 96%;
     border-bottom: 1px solid #A9A9A9;
+    padding-left: 5px;
+    padding-top: 5px;
 }
 
 .panelBody {
     padding: 9px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: left;
 }
 
 .contentBox {
     border-radius: 2px;
-    border: 1px solid #898989FF;
-    width: 500px;
+    border: 1px solid #111111FF;
+    width: 360px;
     margin-bottom: 9px;
+    background: #DEDEDE22;
+    background: linear-gradient(45deg,rgba(222, 222, 222, 0.15) 0%, rgba(249, 249, 249, 0.15) 50%, rgba(222, 222, 222, 0.15) 100%);
+    box-shadow: #656565 -5px -5px -5px -5px inset;
 }
 
 .contentBoxHeader {
@@ -136,16 +163,50 @@ h1 {
     color: #FFFFFFFF;
     font-size: 18px;
     font-weight: 500;
-    padding: 3px;
+    padding: 5px;
+    margin-bottom: 3px;
 }
 
 .contentBoxLabel {
-    width: 130px;
+    width: 85px;
     font-weight: 500;
     font-size: 16px;
+    color: #FFFFFFFF;
 }
 
 .contentBoxData {
-    width: 130px;
+    width: 110px;
     font-size: 16px;
+    color: #FFFFFFFF;
+}
+
+.clickLink {
+    color: #F123FFFF;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.topMenuLeft {
+    margin-top: 3px;
+    color: #CEBBDDFF;
+    border-right: 1px solid #DDDDDDFF;
+    text-align: center;
+    max-height: 26px;
+}
+
+.topMenuRight {
+    color: #CEBBDDFF;
+    text-align: center;
+}
+
+.signupPanel {
+    position: fixed;
+    left: calc(50vw - (50vw - 20px));
+    width: calc(100vw - 60px);
+    height: 80vh;
+    top: 4vh;
+    border-radius: 6px;
+    border: 2px solid #DE33EDFF;
+    background: #101010F9;
+    text-align: center;
 }

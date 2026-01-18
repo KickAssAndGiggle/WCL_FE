@@ -6,7 +6,7 @@ import Login from './login/Login'
 
 function App() {
 
-  const [loggedIn, setLoggedIn] = useState(sessionStorage.getItem('token') != null)
+  const [loggedIn, setLoggedIn] = useState(false); // useState(sessionStorage.getItem('token') != null)
   
   const onLogin = () => {
     setLoggedIn(true)
