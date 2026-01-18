@@ -42,7 +42,12 @@ function UIFramework() {
           </div>
         </div>
       :
-        <SlideMenu />
+        <SlideMenu screenSize={screenSize} screenChange={screenChange} />
+      }
+      {screenSize != 'DESKTOP' ?
+        <GamePanel ScreenSize={screenSize} Panel={panel} />
+      :
+        <></>
       }
     </div>
   )

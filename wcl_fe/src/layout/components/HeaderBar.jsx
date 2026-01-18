@@ -32,14 +32,15 @@ function HeaderBar(props) {
         <div>
           <img src={WCL} width={imageWidth} height={imageHeight} />
         </div>
-        <div className="flex">
-          <div style={{ width: "70px" }} className="topMenuLeft" > Wiki</div>
-          <div style={{ width: "75px" }} className="topMenuLeft" > Rules</div>
-          <div style={{ width: "152px" }}  className="topMenuLeft">Newbie Guide</div>
-          <div style={{ width: "80px" }}  className="topMenuLeft">Forum</div>
-          <div style={{ width: "75px" }}  className="topMenuLeft">Staff</div>
-          <div style={{ width: "90px" }}  className="topMenuRight">Credits</div>
-        </div>
+        {props.ScreenSize != 'MOBILE' ?
+          <div className="flex">
+            <div style={{ width: "70px" }} className="topMenuLeft" > Wiki</div>
+            <div style={{ width: "75px" }} className="topMenuLeft" > Rules</div>
+            <div style={{ width: "152px" }} className="topMenuLeft">Newbie Guide</div>
+            <div style={{ width: "80px" }} className="topMenuLeft">Forum</div>
+            <div style={{ width: "75px" }} className="topMenuLeft">Staff</div>
+            <div style={{ width: "90px" }} className="topMenuRight">Credits</div>
+          </div> : <></>}
       </div>
       
     </div>

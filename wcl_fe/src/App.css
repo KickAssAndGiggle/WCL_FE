@@ -123,6 +123,32 @@ a {
     padding-top: 2px;
 }
 
+.slideMenuContainer {
+    display: flex;
+    width: 100vw;
+    border-top: #696969FF;
+    scrollbar-width: none;
+    overflow-x: scroll;
+}
+
+.slideMenuItem {
+    background: #474747FF;
+    text-align: center;
+    color: #FFFFFF;
+    width: 40px;
+    max-width: 40px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.slideMenuLabel {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: -5px;
+}
+
 .gamePanel {
     border-radius: 2px;
     border: 2px solid #000;
@@ -209,4 +235,17 @@ a {
     border: 2px solid #DE33EDFF;
     background: #101010F9;
     text-align: center;
+}
+
+.smallText {
+    font-size: 12px;
+}
+
+.greenText {
+    color: #68DC68FF;
+}
+
+.smallVerticalPad {
+    padding-top: 3px;
+    padding-bottom: 3px;
 }

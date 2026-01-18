@@ -42,3 +42,8 @@ export function getProspects(callback) {
   const body = { Token: sessionStorage.getItem('token') }
   postData("Gym/GetProspects", body, callback)
 }
+
+export function assignProspectToGym(id, callback) {
+  const body = { Token: sessionStorage.getItem('token'), Id: id }
+  postData("Gym/InviteToGym", body, callback)
+}
