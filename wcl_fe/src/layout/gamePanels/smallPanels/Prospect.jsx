@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Anon from '../../../assets/anon.png'
 import { assignProspectToGym } from '../../../helpers/apiAccess'
+import { FighterImage } from '../../components/FighterImage'
 function Prospect(props) {
 
 	const [assignedOnLoad, setAssignedOnLoad] = useState(props.assigned)
@@ -24,7 +25,8 @@ function Prospect(props) {
 		<div>
 			<div className="flex">
 				<div style={{ paddingLeft: "10px" }}>
-					<img src={Anon} width="140" height="140" />
+					{/*<img src={Anon} width="140" height="140" />*/}
+					<FighterImage fighter={props.prospect} width="140" height="140" />
 				</div>
 				<div style={{ paddingLeft: "10px" }}>
 					<div className="flex">

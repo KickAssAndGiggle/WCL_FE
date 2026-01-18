@@ -121,6 +121,7 @@ a {
     margin-bottom: 1px;
     color: #FFFFFFFF;
     padding-top: 2px;
+    cursor: pointer;
 }
 
 .slideMenuContainer {

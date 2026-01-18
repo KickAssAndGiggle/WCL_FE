@@ -52,8 +52,8 @@ export function Login(props) {
         <img src={Logo} style={{ width: smallScreen ? "240px" : "450px", height: smallScreen ? "240px" : "400px", margin: "auto" } } />
         <p>Email:<br />
           <input className="inputBox" id="txtUser" />
-        <br />Password<br />
-          <input className="inputBox" id="txtPassword" />
+          <br />Password<br />
+          <input className="inputBox" id="txtPassword" type="password" />
         </p>
         <button className="button" onClick={() => doLogin()}>Login</button>
         <p>New here? <a href="#" onClick={() => signUp() }>Sign up!</a></p>
